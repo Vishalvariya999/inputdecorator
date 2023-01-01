@@ -21,4 +21,8 @@ import { HomeComponent } from './shared/home/home.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(){
+    console.log("App Module Running")
+  }
+ }

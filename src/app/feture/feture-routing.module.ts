@@ -5,17 +5,17 @@ import { Child2Component } from './child2/child2.component';
 
 const routes: Routes = [
   {
-    path:'child1',
+    path:'child',
     component:ChildComponent
   },
-  // {
-  //   path:'child2',
-  //   component:Child2Component
-  // },
-  // {
-  //   path:'**',
-  //   redirectTo:'child1'
-  // }
+  {
+    path:'child2/:id',
+    component:Child2Component
+  },  
+  {
+    path:'**',
+    redirectTo:'child'
+  }
 ];
 
 @NgModule({

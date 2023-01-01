@@ -4,12 +4,16 @@ import { HomeComponent } from './shared/home/home.component';
 
 const routes: Routes = [
   {
-    path:'',
+    path:'home',
     component:HomeComponent
   },
   {
     path:'feture',
-    loadChildren:()=>import('../app/feture/feture.module').then(m=>m.FetureModule)
+    loadChildren:()=>import('../app/feture/feture.module').then(module=>module.FetureModule)
+  },
+  {
+    path:'**',
+    redirectTo:'home'
   }
 ];
 

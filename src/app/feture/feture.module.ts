@@ -11,4 +11,8 @@ import { FetureRoutingModule } from './feture-routing.module';
     FetureRoutingModule
   ]
 })
-export class FetureModule { }
+export class FetureModule { 
+  constructor(){
+    console.log('feturemodule')
+  }
+}
