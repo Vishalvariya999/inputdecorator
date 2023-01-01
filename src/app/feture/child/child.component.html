@@ -1,0 +1,25 @@
+<div class="container">
+  <!-- <button class="btn btn-md btn-primary mx-2" (click)="increment(coutNumber.value)">+</button> -->
+  <!-- <span class="mx-4 fs-5">{{coutNumber}}</span> -->
+  <!-- <button class="btn btn-md   btn-danger" (click)="decrement(coutNumber)">-</button> -->
+
+  <h1 class="h1 text-center">Student Details</h1>
+  <table class="table table-dark table-hover">
+    <thead class="table table-success">
+      <tr>
+        <th>Roll no</th>
+        <th>Name</th>
+        <th>Course</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let studData of studDatas">
+        <td>{{ studData.id }}</td>
+        <td>{{ studData.name }}</td>
+        <td>{{ studData.course }}</td>
+        <td>{{ studData.age }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -14,6 +14,10 @@ interface Student{
 })
 export class AppComponent {
   title = 'my-app';
+  
+  // showNum(coutNumber:number){
+  //   this.currentCount + coutNumber;
+  // }
 
   stud:Student[]=[
   {
